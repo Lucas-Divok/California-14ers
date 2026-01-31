@@ -1,26 +1,74 @@
-body { font-family: Arial; background-color: rgb(177, 209, 187); }
-
-h1 { font-family: Arial; color: rgb(94, 14, 14); text-align: center; }
-
-h2 { font-family: Serif; color: rgb(19, 21, 155); }
-
-p { font-family: Courier; }
-
+/* Body and background */
+body { 
+    margin: 0;
+    font-family: 'Times', sans-serif;
+    background : rgb(82, 63, 82);
+}
 
 
-/* the 12 peaks will have a grid layout */
+/* Hero Section */
+.hero {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-image: url('images/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
-.grid-container { display: grid; grid-template-columns: 1fr; gap: 15px; padding: 20px; }
 
-/* For mobile users its 1 column and  when desktop is wider than 768px, switch to 3 columns */
+.hero h1 {
+    font-size: 72px;
+}
 
-@media (min-width: 768px) { .grid-container {grid-template-columns: repeat(3, 1fr);} }
+.hero p {
+    font-size: 18px;
+    color: white;
+}
 
-/* for each different peak/box */
 
-.peak-card { background-color: white; 
-    border: 1px solid rgb(20, 20, 102); 
+.subtext {
+    font-size: 14px;
+    color: white;
+}
+
+/* Text colors for peak cards */
+h2 { 
+    color: #000000; 
+}
+
+p { 
+    color: #5f5252; 
+}
+
+/* Peak grid layout */
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 17px; 
+    padding: 20px; 
+}
+
+@media (min-width: 768px) { 
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+/* Peak cards */
+.peak-card { 
+    background-color: white; 
+    border: 3px solid rgb(110, 70, 9); 
     border-radius: 10px; 
-    padding-left: 20px;
+    padding-left: 18px;
+    transition: transform 0.2s;
+}
+
+.peak-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
