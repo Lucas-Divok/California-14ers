@@ -1,7 +1,26 @@
 body { font-family: Arial; background-color: rgb(177, 209, 187); }
 
-h1 { font-family: Arial; color: rgb(94, 14, 14);  }
+h1 { font-family: Arial; color: rgb(94, 14, 14); text-align: center; }
 
 h2 { font-family: Serif; color: rgb(19, 21, 155); }
 
 p { font-family: Courier; }
+
+
+
+/* the 12 peaks will have a grid layout */
+
+.grid-container { display: grid; grid-template-columns: 1fr; gap: 15px; padding: 20px; }
+
+/* For mobile users its 1 column and  when desktop is wider than 768px, switch to 3 columns */
+
+@media (min-width: 768px) { .grid-container {grid-template-columns: repeat(3, 1fr);} }
+
+/* for each different peak/box */
+
+.peak-card { background-color: white; 
+    border: 1px solid rgb(20, 20, 102); 
+    border-radius: 10px; 
+    padding-left: 20px;
+}
+
