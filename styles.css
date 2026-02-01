@@ -1,14 +1,14 @@
 /* Body and background */
 body { 
     margin: 0;
-    font-family: 'Times', sans-serif;
-    background : rgb(82, 63, 82);
+    font-family: 'Times New Roman', sans-serif;
+    background : rgb(136, 124, 136);
 }
 
 
 /* Hero Section */
 .hero {
-    height: 77vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,11 +29,42 @@ body {
     color: white;
 }
 
-
 .subtext {
     font-size: 14px;
     color: white;
 }
+
+/* Peak hero section */
+
+
+.peak-hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 0 0 15vh 10vw;
+}
+
+.peak-hero h1 {
+    font-size: 100px;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+/* makes the clickboxes for each peak one block without underlines */
+
+.card-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Keeps your black and gray text colors */
+    display: block;       /* Ensures the whole card area is clickable */
+}
+
 
 /* Text colors for peak cards */
 h2 { 
@@ -41,7 +72,7 @@ h2 {
 }
 
 p { 
-    color: #5f5252; 
+    color: #5c5656; 
 }
 
 /* Peak grid layout */
