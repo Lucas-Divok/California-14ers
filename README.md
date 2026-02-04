@@ -9,3 +9,7 @@ Currently, there is no dedicated website for California 14ers, which makes it di
 ## About Me
 
 I'm a Computer Science student at WGU with a passion for hiking, backpacking, and mountaineering. I've summited Cotopaxi in Ecuador, attempted Chimborazo and Pico de Orizaba, and completed the Gokyo Ri trek in Nepal. I regularly climb California's 14ers in both summer and winter conditions. This project combines my interest in web development with my love for the outdoors.
+
+## Live Site
+
+https://lucas-divok.github.io/California-14ers/
